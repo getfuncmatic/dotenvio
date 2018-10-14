@@ -1,0 +1,25 @@
+{
+  "name": "@funcmatic/dotenvio",
+  "version": "0.0.1",
+  "description": "NodeJS client library for dotenv.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Daniel Jhin Yoo <danieljyoo@gmail.com> (https://github.com/danieljyoo)",
+  "license": "MIT",
+  "homepage": "https://github.com/getfuncmatic/dotenvio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getfuncmatic/dotenvio.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "dotenv": "^6.1.0",
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
