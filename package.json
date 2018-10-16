@@ -1,6 +1,6 @@
 {
   "name": "@funcmatic/dotenvio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeJS client library for dotenv.io",
   "main": "index.js",
   "scripts": {
