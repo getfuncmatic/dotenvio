@@ -20,4 +20,15 @@ describe('Request', async () => {
       REDIS_BLAH: 'helloworld'
     })
   })
+  it ('should noop if no DOTENVIO params are provided', async () => {
+    delete process.env['DOTENVIO_ACCESS_KEY_ID']
+    delete process.env['DOTENVIO_SECRET_ACCESS_KEY']
+    delete process.env['REDIS_BLAH']
+    var dotenvio_noconf = dotenvio.create()
+    var vars = await dotenvio_noconf.config()
+    expect(vars).toBe(null)
+    expect(process.env['DOTENVIO_ACCESS_KEY_ID']).toBeFalsy()
+    expect(process.env['DOTENVIO_SECRET_ACCESS_KEY']).toBeFalsy()
+    expect(process.env['REDIS_BLAH']).toBeFalsy()
+  })
 })
