@@ -1,6 +1,6 @@
 {
   "name": "@funcmatic/dotenvio",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "NodeJS client library for dotenv.io",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,9 @@
     "type": "git",
     "url": "https://github.com/getfuncmatic/dotenvio.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "aws4": "^1.8.0"
+  },
   "devDependencies": {
     "dotenv": "^6.1.0",
     "jest": "^21.2.1"
